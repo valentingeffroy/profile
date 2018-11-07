@@ -7,9 +7,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div id="sidebar" >
+    <ul>
+      <li class="menu"><a href="#summary"><i class="fa fa-info-circle"></a></i></li>
+      <li class="menu"><a href="#favorite-movies"><i class="fa fa-film"></i></a></li>
+      <li class="menu"> <a href="#contact"><i class="fa fa-envelope"></i></a></li>
+    </ul>
+  </div>
+  <div id="page-content" class="container">
     <div class="card">
-      <img class="avatar_valentin" src="images/valentingeffroy.jpeg" alt="profile_pic">
+      <img class="avatar_valentin" src="images/valentingeffroy.jpeg" alt="profile_pic" id="summary">
       <h1>Valentin Geffroy</h1>
       <h2>Developper Full-Stack Ruby</h2>
       <p>After a master in digital marketing, I develop a dual business / technical skills. The, I would like to develop a startup in the environment.</p>
@@ -23,7 +30,7 @@
       </ul>
     </div>
     <div class="card">
-    <h2>My favorite movies</h2>
+    <h2 id="favorite-movies">My favorite movies</h2>
       <table>
         <tr>
           <td>
@@ -53,6 +60,13 @@
           </td>
         </tr>
       </table>
+    </div>
+    <div class="card">
+      <h1 id="contact">Contact me</h1>
+        <ul>
+          <li><a href="mailto:geffroy.valentin@gmail.com" target="_blank"><i class="fa fa-envelope"></i> geffroy.valentin@gmail.com</a></li>
+          <li><a href=""<i class="fa fa-phone"></i> 06.47.50.80.46</a></li>
+        </ul>
     </div>
   </div>
 </body>
